@@ -21,7 +21,7 @@ const TodoInsert = ({ onAddTodo }) => {
 			<div className="container">
 				<div className="todoTitle" onSubmit={onSubmit}>
 					<input placeholder="New Todo" value={value} onChange={onChange} />
-					<Btn className="insertBtn" type="submit" title="Add new task" onClick={onSubmit} />
+					<Btn type="submit" title="Add new task" onClick={onSubmit} />
 				</div>
 			</div>
 			<br />

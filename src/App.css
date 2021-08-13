@@ -26,6 +26,24 @@ body {
 	/* padding: 10px; */
 }
 
+.todoList {
+	/* background-color: blue; */
+}
+
+.todoListItem {
+	/* background-color: red; */
+	margin: 10px 0;
+	align-items: center;
+}
+
+.todoListItem:first-child {
+	margin-top: 50px;
+}
+
+.todoListItem:last-child {
+	margin-bottom: 50px;
+}
+
 .todoTitle input {
 	width: 400px;
 	text-align: left;
@@ -34,7 +52,7 @@ body {
 	margin-bottom: 5px;
 }
 
-.todoInsert Button {
+.todoTitle .todoBtn {
 	width: 400px;
 	/* background-color: rgb(106, 189, 238); */
 	border: none;
@@ -43,8 +61,22 @@ body {
 	cursor: pointer;
 }
 
+.todoList .todoBtn {
+	color: gray;
+	margin: 0 10px;
+	padding: 5px 10px;
+	border: none;
+	cursor: pointer;
+}
+
 .todoInsert Button:hover {
 	color: gray;
+}
+
+.todoList .todoBtn:hover {
+	/* background-color: #eee; */
+	border-radius: 10px;
+	color: red;
 }
 
 .btns {
@@ -58,6 +90,26 @@ body {
 	display: flex;
 	margin: 20px;
 	justify-content: center;
+}
+.box {
+	align-items: center;
+}
+
+.update,
+.delete {
+	padding: 3px 7px;
+	margin: 0 3px;
+	border: none;
+}
+
+.checkbox {
+	width: 20px;
+	cursor: pointer;
+}
+
+.update:hover,
+.delete:hover {
+	color: #aaa;
 }
 
 .todoListItem {

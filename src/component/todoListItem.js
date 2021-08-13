@@ -24,6 +24,7 @@ const TodoListItem = ({ todo, onDelete, onUpdate, onChengeCheck }) => {
 			<div className="box">
 				<div>
 					<input
+						className="checkbox"
 						type="checkbox"
 						checked={checked}
 						onChange={() => {
