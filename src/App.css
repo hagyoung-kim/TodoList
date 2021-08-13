@@ -37,10 +37,14 @@ body {
 .todoInsert Button {
 	width: 400px;
 	/* background-color: rgb(106, 189, 238); */
-	/* border: none; */
+	border: none;
 	padding: 5px;
 	/* color: white; */
 	cursor: pointer;
+}
+
+.todoInsert Button:hover {
+	color: gray;
 }
 
 .btns {
@@ -48,6 +52,12 @@ body {
 	justify-content: center;
 	margin-bottom: 20px;
 	cursor: pointer;
+}
+
+.allBtns {
+	display: flex;
+	margin: 20px;
+	justify-content: center;
 }
 
 .todoListItem {
@@ -67,4 +77,5 @@ body {
 .checked {
 	margin-right: 100px;
 	text-decoration: line-through;
+	color: rgb(206, 206, 206);
 }
