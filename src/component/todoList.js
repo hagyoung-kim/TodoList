@@ -3,15 +3,7 @@ import Btn from './btn';
 import TodoListItem from './todoListItem';
 
 const TodoList = ({ todos, onDelete, onUpdate, onAllDelete, onChengeCheck, setTodos }) => {
-	// const [show, setShow] = useState(todos);
 	const [ state, setState ] = useState('all');
-
-	// useEffect(
-	// 	() => {
-	// 		setShow(todos);
-	// 	},
-	// 	[ todos ]
-	// );
 
 	const allBtn = () => {
 		setState('all');
@@ -33,16 +25,6 @@ const TodoList = ({ todos, onDelete, onUpdate, onAllDelete, onChengeCheck, setTo
 				<Btn title="Todo" onClick={todoBtn} />
 			</div>
 
-			{/* {todos.map((todo) => (
-				<TodoListItem
-					todo={todo}
-					key={todo.id}
-					onDelete={onDelete}
-					onUpdate={onUpdate}
-					onAllDelete={onAllDelete}
-					onChengeCheck={onChengeCheck}
-				/>
-			))} */}
 			<div>
 				{state === 'all' ? (
 					todos.map((todo) => (

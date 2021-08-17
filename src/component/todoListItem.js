@@ -1,8 +1,7 @@
 import React, { useState } from 'react';
-// import { MdDone, MdDelete } from 'react-icons/md';
 
 const TodoListItem = ({ todo, onDelete, onUpdate, onChengeCheck }) => {
-	const [ checked, setChecked ] = useState(todo.check); //(값 명확히 알기!)boolean값을 초기값으로 넣어뒀는데 아래 함수에서는 오브젝트형식으로 만들어놓았기 때문에 체크가 적용이 안되고있었음.
+	const [ checked, setChecked ] = useState(todo.check);
 	const [ update, setUpdate ] = useState(false);
 
 	const textHandler = (e) => {
@@ -61,7 +60,6 @@ const TodoListItem = ({ todo, onDelete, onUpdate, onChengeCheck }) => {
 					삭제
 				</button>
 			</div>
-			{/* </div> */}
 		</div>
 	);
 };

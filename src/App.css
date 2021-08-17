@@ -3,7 +3,6 @@
 	/* margin-left: 10px; */
 	text-decoration: none;
 	list-style: none;
-	/* text-align: center; */
 }
 
 body {
@@ -19,19 +18,7 @@ body {
 	text-align: center;
 }
 
-.container {
-	/* width: 450px; */
-	/* height: 100px; */
-	/* border: 1px solid gray; */
-	/* padding: 10px; */
-}
-
-.todoList {
-	/* background-color: blue; */
-}
-
 .todoListItem {
-	/* background-color: red; */
 	margin: 10px 0;
 	align-items: center;
 }
@@ -54,10 +41,8 @@ body {
 
 .todoTitle .todoBtn {
 	width: 400px;
-	/* background-color: rgb(106, 189, 238); */
 	border: none;
 	padding: 5px;
-	/* color: white; */
 	cursor: pointer;
 }
 
@@ -74,7 +59,6 @@ body {
 }
 
 .todoList .todoBtn:hover {
-	/* background-color: #eee; */
 	border-radius: 10px;
 	color: red;
 }
@@ -120,10 +104,6 @@ body {
 
 .box {
 	display: flex;
-}
-
-.text {
-	/* margin-right: 100px; */
 }
 
 .checked {

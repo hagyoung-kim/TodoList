@@ -11,7 +11,6 @@ const TodoInsert = ({ onAddTodo }) => {
 	const onSubmit = (e) => {
 		onAddTodo(value);
 		setValue('');
-		// e.preventDefault();
 	};
 	//props로 받아온 onInsert() 함수에 현재의 value값을 파라미터로 넣어서 호출하고, 현재 value값을 초기화함.
 
